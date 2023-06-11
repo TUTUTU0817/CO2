@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[6]:
+
+
+pip install pycaret
+
+
+# In[5]:
 
 
 import streamlit as st
