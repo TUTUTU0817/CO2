@@ -6,3 +6,24 @@ jinja2==3.0
 bokeh==2.4.3
 backtesting
 pycaret
+imbalanced-learn==0.7.0
+iniconfig==1.1.1
+ipykernel==5.4.2
+ipython==7.19.0
+ipython-genutils==0.2.0
+ipywidgets==7.5.1
+isodate==0.6.0
+itsdangerous==1.1.0
+jedi==0.17.2
+Jinja2==2.11.2
+joblib @ file:///tmp/build/80754af9/joblib_1607970656719/work
+jsonschema==3.2.0
+jupyter-client==6.1.7
+jupyter-core==4.7.0
+jupyterlab-pygments==0.1.2
+kiwisolver @ file:///D:/bld/kiwisolver_1604322452227/work
+kmodes==0.10.2
+lifelines==0.25.7
+lightgbm==3.1.1
+llvmlite==0.35.0
+Mako==1.1.3
