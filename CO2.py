@@ -4,7 +4,7 @@
 # In[6]:
 
 
-pip install pycaret
+!pip install pycaret
 
 
 # In[5]:
