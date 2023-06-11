@@ -4,7 +4,7 @@
 # In[2]:
 
 
-#get_ipython().system('pip install pycaret')
+get_ipython().system('pip install pycaret.regression')
 
 
 # In[3]:
