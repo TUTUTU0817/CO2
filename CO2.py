@@ -1,12 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[6]:
-
-
-
-
-# In[5]:
+# In[10]:
 
 
 import streamlit as st
@@ -23,6 +18,7 @@ num_cols=['ENGINESIZE', 'CYLINDERS','FUELCONSUMPTION_CITY','FUELCONSUMPTION_HWY'
 cat_cols=['MAKE','VEHICLECLASS','TRANSMISSION','FUELTYPE']
 target=['CO2EMISSIONS']
 model_cat = load_model('model_pkl')
+
 st.title('CO2 Emission of Vehicles')
 
 st.markdown("## 汽車二氧化碳排放量")
@@ -53,6 +49,12 @@ if st.button('Estimate'):
     result=int(prediction['prediction_label'][0])
     st.success(
         f' Estimated CO2 Emission is {result}')
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
