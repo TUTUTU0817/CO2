@@ -1,13 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
-
-
-#get_ipython().system('pip install pycaret')
-
-
-# In[3]:
+# In[4]:
 
 
 import streamlit as st
@@ -54,6 +48,12 @@ if st.button('Estimate'):
     result=int(prediction['prediction_label'][0])
     st.success(
         f' Estimated CO2 Emission is {result}')
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
