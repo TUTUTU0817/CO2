@@ -38,7 +38,7 @@
 # import packages required
 
 import pandas as pd
-import seaborn as sns
+#import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 from math import sqrt
@@ -202,18 +202,18 @@ df['TRANSMISSION'].value_counts().max(), df['TRANSMISSION'].value_counts().idxma
 
 
 # Model too noisy to use
-plot_categorical_numerical_relationship(df,cat_cols,['CO2EMISSIONS'])
+#plot_categorical_numerical_relationship(df,cat_cols,['CO2EMISSIONS'])
 
 
 # In[ ]:
 
 
 # correlation between numerical columns
-def plot_correlation(df,num_cols):
-    plt.figure(figsize=(10, 8))
-    sns.heatmap(df[num_cols].corr(), annot=True, cmap='coolwarm')
-    plt.show()
-plot_correlation(df,num_cols)   
+#def plot_correlation(df,num_cols):
+   # plt.figure(figsize=(10, 8))
+  #  sns.heatmap(df[num_cols].corr(), annot=True, cmap='coolwarm')
+ #   plt.show()
+#plot_correlation(df,num_cols)   
 
 
 # Feature Encoding 
