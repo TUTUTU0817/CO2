@@ -109,21 +109,21 @@ df['TRANSMISSION'].value_counts().max(), df['TRANSMISSION'].value_counts().idxma
 
 
 # countplot 
-plt.figure(figsize=(20,4))
-sns.countplot(x='MODEL', data=df[:40])
-plt.xticks(rotation=15);
+#plt.figure(figsize=(20,4))
+#sns.countplot(x='MODEL', data=df[:40])
+#plt.xticks(rotation=15);
 
 
 # In[ ]:
 
 
-num_cols
+#num_cols
 
 
 # In[ ]:
 
 
-cat_cols
+#cat_cols
 
 
 # In[ ]:
@@ -131,21 +131,21 @@ cat_cols
 
 # snippt to find size of key in "string"-like feature
 # there are 279 states in the first word in "Model" feature
-cat_cols_val=df['MODEL'].values
-new_cat_cols_val = [col.split(' ')[0] for col in cat_cols_val]
+#cat_cols_val=df['MODEL'].values
+#new_cat_cols_val = [col.split(' ')[0] for col in cat_cols_val]
 
-len(set(new_cat_cols_val))
+#len(set(new_cat_cols_val))
 
 
 # In[ ]:
 
 
 # Snippt to map string-like feature to its frequency
-MODEL_dict = df['MODEL'].value_counts().to_dict()
+#MODEL_dict = df['MODEL'].value_counts().to_dict()
 #
 #set(MODEL_dict.values())
 # {1, 2, 3, 4, 5, 6, 8}
-df['MODEL_freq_enc'] = df['MODEL'].map(MODEL_dict)
+#df['MODEL_freq_enc'] = df['MODEL'].map(MODEL_dict)
 
 
 # Visualisation
@@ -159,43 +159,43 @@ df['MODEL_freq_enc'] = df['MODEL'].map(MODEL_dict)
 # In[ ]:
 
 
-def plot_numeric_distribution(df,num_cols):
-    for col in num_cols:
-        plt.figure(figsizecor=(6, 4))
-        sns.histplot(df[col], kde=False)
-        plt.title(col)
-        plt.show()
+#def plot_numeric_distribution(df,num_cols):
+    #for col in num_cols:
+    #    plt.figure(figsizecor=(6, 4))
+   #     sns.histplot(df[col], kde=False)
+  #      plt.title(col)
+ #       plt.show()
 
-plot_numeric_distribution(df,num_cols)       
+#plot_numeric_distribution(df,num_cols)       
 
 
 # In[ ]:
 
 
 # use bar charts or frequency tables to visualize the distribution of these categorical columns
-def plot_categorical_distribution(df,cols,rot=45):
-    for col in cols:    
-        plt.figure(figsize=(12,4))
-        sns.countplot(x=col, data=df)
-        plt.title(col)
-        plt.xticks(rotation=rot)
-        plt.show()
+#def plot_categorical_distribution(df,cols,rot=45):
+    #for col in cols:    
+     #   plt.figure(figsize=(12,4))
+    #    sns.countplot(x=col, data=df)
+   #     plt.title(col)
+  #      plt.xticks(rotation=rot)
+ #       plt.show()
 #plot_categorical_distribution(df,cat_cols)
-plot_categorical_distribution(df,cat_cols)       
+#plot_categorical_distribution(df,cat_cols)       
 
 
 # In[ ]:
 
 
 # use boxplots to visualize the relationship between categorical and numerical columns
-def plot_categorical_numerical_relationship(df,cat_cols,num_cols):
-    for cat_col in cat_cols:
-        for num_col in num_cols:
-            plt.figure(figsize=(8, 6))
-            sns.boxplot(x=cat_col, y=num_col, data=df)
-            plt.title(cat_col + ' vs ' + num_col)
-            plt.xticks(rotation=45)
-            plt.show()
+#def plot_categorical_numerical_relationship(df,cat_cols,num_cols):
+ #   for cat_col in cat_cols:
+  #      for num_col in num_cols:
+   #         plt.figure(figsize=(8, 6))
+    #        sns.boxplot(x=cat_col, y=num_col, data=df)
+     #       plt.title(cat_col + ' vs ' + num_col)
+      #      plt.xticks(rotation=45)
+       #     plt.show()
 
 
 # In[ ]:
