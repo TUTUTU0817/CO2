@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[10]:
+# In[28]:
 
 
 import streamlit as st
@@ -10,7 +10,7 @@ import pandas as pd
 
 from pycaret.regression import load_model, predict_model,setup
 
-file="https://raw.githubusercontent.com/cchuang2009/2022-1/main/Python_IM/2023-2/data/FuelConsumptionCo2.csv"
+file="https://raw.githubusercontent.com/TUTUTU0817/CO2/main/FuelConsumptionCo2.csv"
 
 df = pd.read_csv(file)
 
@@ -51,16 +51,16 @@ if st.button('Estimate'):
         f' Estimated CO2 Emission is {result}')
 
 
-# In[ ]:
+# In[11]:
 
 
+get_ipython().system('pip install str')
 
 
-
-# In[ ]:
-
+# In[20]:
 
 
+get_ipython().system('pip install pycaret')
 
 
 # In[ ]:
