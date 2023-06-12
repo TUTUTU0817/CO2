@@ -43,7 +43,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from math import sqrt
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[ ]:
