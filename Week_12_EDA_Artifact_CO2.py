@@ -393,7 +393,7 @@ print(saved_final_cat)
 
 
 # interpret summary model
-interpret_model(saved_final_cat, plot = 'summary')
+#interpret_model(saved_final_cat, plot = 'summary')
 
 
 # Streamlit Artifact
