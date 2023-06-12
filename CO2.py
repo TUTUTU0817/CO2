@@ -54,13 +54,13 @@ if st.button('Estimate'):
 # In[11]:
 
 
-get_ipython().system('pip install str')
+#get_ipython().system('pip install str')
 
 
 # In[20]:
 
 
-get_ipython().system('pip install pycaret')
+#get_ipython().system('pip install pycaret')
 
 
 # In[ ]:
