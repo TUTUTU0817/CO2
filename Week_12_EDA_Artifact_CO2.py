@@ -284,7 +284,7 @@ best = compare_models()
 # In[ ]:
 
 
-best
+# best
 
 
 # In[ ]:
@@ -305,7 +305,7 @@ tuned_lr= tune_model(lr)
 
 
 final_lr= finalize_model(tuned_lr)
-print(final_lr)
+# print(final_lr)
 
 
 # In[ ]:
@@ -319,7 +319,7 @@ save_model(final_lr,'Final_lr_2023_4_27')
 
 saved_final_lr= load_model('Final_lr_2023_4_27')
 #predict_model(saved_final_cat)
-print(saved_final_lr)
+# print(saved_final_lr)
 
 
 # In[ ]:
@@ -345,7 +345,7 @@ predict_model(tuned_cat)
 
 
 final_cat = finalize_model(tuned_cat)
-print(final_cat)
+# print(final_cat)
 
 
 # In[ ]:
@@ -386,7 +386,7 @@ with open('model_pkl', 'wb') as files:
 
 
 saved_final_cat = load_model('model_pkl')
-print(saved_final_cat)
+# print(saved_final_cat)
 
 
 # In[ ]:
