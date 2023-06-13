@@ -96,7 +96,7 @@ num_cols.remove('MODELYEAR')
 # find out the count/value of most freqenency one in certain feature
 # count of values mostly in "TRANSMISSION" is 222 and is 'A6'
 
-df['TRANSMISSION'].value_counts().max(), df['TRANSMISSION'].value_counts().idxmax()
+# df['TRANSMISSION'].value_counts().max(), df['TRANSMISSION'].value_counts().idxmax()
 
 
 # EDA (Exploratory Data Analysis)
@@ -447,7 +447,7 @@ final_features = np.array(num_values + cat_values).reshape(1, -1)
 if st.button('Estimate'):
     new_data=pd.DataFrame(data=final_features,columns=num_cols + cat_cols)
     prediction=predict_model(estimator=model_cat, data=new_data)
-    st.balloons()
+#     st.balloons()
     result=int(prediction['prediction_label'][0])
     st.success(
         f' Estimated CO2 Emission is {result}')
